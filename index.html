@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estante — Missionária Nancy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2c1810;
+    background-image:
+      radial-gradient(ellipse at 50% 0, #3d2317 0%, #1a0f0a 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #d4a574;
+    font-size: 2.2em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.5);
+  }
+  .subtitle {
+    text-align: center;
+    color: #8b6b4a;
+    font-size: .95em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  .shelf {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 24px;
+    padding: 0 10px;
+  }
+  .book {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .25s ease, box-shadow .25s ease;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  .book:hover {
+    transform: translateY(-6px);
+  }
+  .book:active {
+    transform: translateY(-2px);
+  }
+  .cover {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow:
+      0 4px 12px rgba(0,0,0,.6),
+      0 1px 3px rgba(0,0,0,.4),
+      inset 0 0 0 1px rgba(255,255,255,.06);
+    transition: box-shadow .25s ease;
+    background: #1a0f0a;
+  }
+  .book:hover .cover {
+    box-shadow:
+      0 8px 24px rgba(0,0,0,.7),
+      0 2px 6px rgba(0,0,0,.5),
+      inset 0 0 0 1px rgba(212,165,116,.15);
+  }
+  .label {
+    margin-top: 10px;
+    color: #c9a87e;
+    font-size: .78em;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+  .label small {
+    display: block;
+    color: #7a5f42;
+    font-size: .85em;
+    margin-top: 2px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #5a432e;
+    font-size: .8em;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    .shelf { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 16px; }
+    h1 { font-size: 1.5em; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Missionária Nancy</h1>
+<p class="subtitle">27 estudos bíblicos &middot; estante digital</p>
+
+<div class="shelf">
+
+<a class="book" href="01-mateus/o-reino-que-vem.html">
+  <img class="cover" src="01-mateus/imagens/capa.jpg" alt="Mateus">
+  <span class="label">Mateus<small>O Reino Que Vem</small></span>
+</a>
+
+<a class="book" href="02-marcos/o-servo-que-veio-para-servir.html">
+  <img class="cover" src="02-marcos/imagens/capa.jpg" alt="Marcos">
+  <span class="label">Marcos<small>O Servo Que Veio para Servir</small></span>
+</a>
+
+<a class="book" href="03-lucas/o-filho-do-homem.html">
+  <img class="cover" src="03-lucas/imagens/capa.jpg" alt="Lucas">
+  <span class="label">Lucas<small>O Filho do Homem</small></span>
+</a>
+
+<a class="book" href="04-joao/o-verbo-se-fez-carne.html">
+  <img class="cover" src="04-joao/imagens/capa.jpg" alt="João">
+  <span class="label">João<small>O Verbo se Fez Carne</small></span>
+</a>
+
+<a class="book" href="05-atos/poder-do-alto.html">
+  <img class="cover" src="05-atos/imagens/capa.jpg" alt="Atos">
+  <span class="label">Atos<small>Poder do Alto</small></span>
+</a>
+
+<a class="book" href="06-romanos/justica-de-deus-revelada.html">
+  <img class="cover" src="06-romanos/imagens/capa.jpg" alt="Romanos">
+  <span class="label">Romanos<small>Justiça de Deus Revelada</small></span>
+</a>
+
+<a class="book" href="07-1-corintios/corpo-de-cristo-em-unidade.html">
+  <img class="cover" src="07-1-corintios/imagens/capa.jpg" alt="1 Coríntios">
+  <span class="label">1 Coríntios<small>Corpo de Cristo em Unidade</small></span>
+</a>
+
+<a class="book" href="08-2-corintios/poder-na-fraqueza.html">
+  <img class="cover" src="08-2-corintios/imagens/capa.jpg" alt="2 Coríntios">
+  <span class="label">2 Coríntios<small>Poder na Fraqueza</small></span>
+</a>
+
+<a class="book" href="09-galatas/liberdade-em-cristo.html">
+  <img class="cover" src="09-galatas/imagens/capa.jpg" alt="Gálatas">
+  <span class="label">Gálatas<small>Liberdade em Cristo</small></span>
+</a>
+
+<a class="book" href="10-efesios/riquezas-da-graca.html">
+  <img class="cover" src="10-efesios/imagens/capa.jpg" alt="Efésios">
+  <span class="label">Efésios<small>As Riquezas da Graça</small></span>
+</a>
+
+<a class="book" href="11-filipenses/alegria-no-senhor.html">
+  <img class="cover" src="11-filipenses/imagens/capa.jpg" alt="Filipenses">
+  <span class="label">Filipenses<small>Alegria no Senhor</small></span>
+</a>
+
+<a class="book" href="12-colossenses/colossenses.html">
+  <img class="cover" src="12-colossenses/imagens/capa.jpg" alt="Colossenses">
+  <span class="label">Colossenses<small>Cristo, Tudo em Todos</small></span>
+</a>
+
+<a class="book" href="13-1-tessalonicenses/1-tessalonicenses.html">
+  <img class="cover" src="13-1-tessalonicenses/imagens/capa.jpg" alt="1 Tessalonicenses">
+  <span class="label">1 Tessalonicenses<small>Esperança Viva</small></span>
+</a>
+
+<a class="book" href="14-2-tessalonicenses/2-tessalonicenses.html">
+  <img class="cover" src="14-2-tessalonicenses/imagens/capa.jpg" alt="2 Tessalonicenses">
+  <span class="label">2 Tessalonicenses<small>Firmes Até o Fim</small></span>
+</a>
+
+<a class="book" href="15-1-timoteo/1-timoteo.html">
+  <img class="cover" src="15-1-timoteo/imagens/capa.jpg" alt="1 Timóteo">
+  <span class="label">1 Timóteo<small>Liderança Piedosa</small></span>
+</a>
+
+<a class="book" href="16-2-timoteo/2-timoteo.html">
+  <img class="cover" src="16-2-timoteo/imagens/capa.jpg" alt="2 Timóteo">
+  <span class="label">2 Timóteo<small>Legado de Fé</small></span>
+</a>
+
+<a class="book" href="17-tito/tito.html">
+  <img class="cover" src="17-tito/imagens/capa.jpg" alt="Tito">
+  <span class="label">Tito<small>Boas Obras que Edificam</small></span>
+</a>
+
+<a class="book" href="18-filemom/amor-que-restaura.html">
+  <img class="cover" src="18-filemom/imagens/capa.jpg" alt="Filemom">
+  <span class="label">Filemom<small>Amor que Restaura</small></span>
+</a>
+
+<a class="book" href="19-hebreus/superior-e-suficiente.html">
+  <img class="cover" src="19-hebreus/imagens/capa.jpg" alt="Hebreus">
+  <span class="label">Hebreus<small>Superior e Suficiente</small></span>
+</a>
+
+<a class="book" href="20-tiago/fe-viva-em-acao.html">
+  <img class="cover" src="20-tiago/imagens/capa.jpg" alt="Tiago">
+  <span class="label">Tiago<small>Fé Viva em Ação</small></span>
+</a>
+
+<a class="book" href="21-1-pedro/esperanca-viva-no-sofrimento.html">
+  <img class="cover" src="21-1-pedro/imagens/capa.jpg" alt="1 Pedro">
+  <span class="label">1 Pedro<small>Esperança Viva no Sofrimento</small></span>
+</a>
+
+<a class="book" href="22-2-pedro/crescei-na-graca.html">
+  <img class="cover" src="22-2-pedro/imagens/capa.jpg" alt="2 Pedro">
+  <span class="label">2 Pedro<small>Crescei na Graça</small></span>
+</a>
+
+<a class="book" href="23-1-joao/1-joao.html">
+  <img class="cover" src="23-1-joao/imagens/capa.jpg" alt="1 João">
+  <span class="label">1 João<small>Deus é Amor</small></span>
+</a>
+
+<a class="book" href="24-2-joao/2-joao.html">
+  <img class="cover" src="24-2-joao/imagens/capa.jpg" alt="2 João">
+  <span class="label">2 João<small>Verdade e Amor</small></span>
+</a>
+
+<a class="book" href="25-3-joao/3-joao.html">
+  <img class="cover" src="25-3-joao/imagens/capa.jpg" alt="3 João">
+  <span class="label">3 João<small>Cooperadores da Verdade</small></span>
+</a>
+
+<a class="book" href="26-judas/judas.html">
+  <img class="cover" src="26-judas/imagens/capa.jpg" alt="Judas">
+  <span class="label">Judas<small>Batalhai pela Fé</small></span>
+</a>
+
+<a class="book" href="27-apocalipse/apocalipse.html">
+  <img class="cover" src="27-apocalipse/imagens/capa.jpg" alt="Apocalipse">
+  <span class="label">Apocalipse<small>O Cordeiro Venceu</small></span>
+</a>
+
+</div>
+
+<p class="footer">Coleção Novo Testamento &middot; 27 ebooks</p>
+
+</body>
+</html>
